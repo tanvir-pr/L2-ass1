@@ -77,7 +77,7 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
 }
 
-const user: User = { id: 1, name: "Alice", email: "alice@example.com" };
+const user: User = { id: 1, name: "tanvir", email: "tanvir@example.com" };
 
 const userName = getProperty(user, "name"); // "Alice"
 This helps TypeScript understand exactly what you’re doing and gives you strong type safety.
